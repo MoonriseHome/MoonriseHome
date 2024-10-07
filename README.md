@@ -1,9 +1,15 @@
 <div align="center">
   <a href="https://moonrise.com" target="_blank">
   <picture>
-   <img alt="Taipy" src="https://raw.githubusercontent.com/MoonriseHome/MoonriseHome/refs/heads/main/homeLOGO2jpg.jpg" width="300" />
+   <img alt="Moonrise" src="https://raw.githubusercontent.com/MoonriseHome/MoonriseHome/refs/heads/main/homeLOGO2jpg.jpg" width="300" />
   </picture>
   </a>
+  <a href="https://moonrise.com" target="_blank">
+  <picture>
+   <img alt="Moonrise" src="https://raw.githubusercontent.com/MoonriseHome/MoonriseHome/refs/heads/main/homeLOGO2jpg.jpg" width="300" />
+  </picture>
+  </a>
+  
 </div>
 
 
