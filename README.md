@@ -19,7 +19,7 @@ From simple pilots to production-ready solana web applications in no time. <br /
 
 <div align="center">
   <picture> 
-   <img alt="Moonrise" src="https://raw.githubusercontent.com/MoonriseHome/MoonriseHome/refs/heads/main/HomeScreenshot.png" width="300" />
+   <img alt="Moonrise" src="https://raw.githubusercontent.com/MoonriseHome/MoonriseHome/refs/heads/main/HomeScreenshot.png" width="500" />
   </picture>
   </a>
 </div>
