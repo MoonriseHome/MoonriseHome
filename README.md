@@ -13,9 +13,6 @@
 Your home for Solana 3D web applications
 </h1>
 
-<div align="center">
-From simple pilots to production-ready solana web applications in no time. <br />
-</div>
 
 <div align="center">
   <picture> 
