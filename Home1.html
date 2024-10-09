@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--       Multilayer Engine 
+           Extremly fast
+
+-->
+
+<head>
+    <title>Moonrise 90 Exporter Three Islands </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="mainmoon3.css">
+</head>
+
+<body>
+
+    <div id="container"></div>
+
+    <div id="overlay">
+        <img src="textures/MOONRISELogo500.jpg" alt="MoonriseLogo" style="width:250px;height:250px; padding-top: 10px;
+          padding-right: 50px; padding-bottom: 20px; padding-left: 50px;">
+
+        Move with the keys W A S D</br>
+        Key R for up and F for down</br></br>... </br></br></br>
+        <button id="startButton">Enter the world</button>
+
+    </div>
+
+    <div id="sidebarleft">
+        KEYS</br>
+        1 Very Slow Speed</br>
+        2 Slow Speed</br> 3 Normal Speed </br>
+        4 Fast Speed</br> 5 Very Fast Speed </br>
+        P Stop</br>O Continue</br>
+    </div>
+
+    <div id="sidebarlefttop">
+        <!--Hidebutton-->
+        <button id="hide-button"><img src="textures/MOONRISELogo500.jpg" alt="MoonriseLogo"
+                style="width:96px;height:96px"></button></br>
+        Moonrise </br>        
+        with Three.JS </br>Relax and enjoy your</br>
+        time on </br>your Island </br>
+
+        <!--Hidebutton-->
+        <button id="positionbutton">...</button>
+
+    </div>
+    <div id="topcenter">
+    </div>
+    </div>
+    <div id="topright"></div>
+    <div id="info3"></div>
+    <div id="demo"></div>
+    <div id="is1info"></div>
+    <div id="infolefttop"></div>
+
+    <div id="bottomcenter">
+        <div id="output">
+            <output id="output"></output>
+        </div>
+
+        <input type="text" placeholder="Input: " id="nameInput" />
+        <button type="button" onclick="displayText()">Submit</button>
+    </div>
+
+    <div id="bottomleft">
+
+        Music</br>
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button></br>
+        <button id="stop-button">Stop</button>
+        <button id="next-button">Next</button></br>
+        <button id="hide-button">Hide</button>
+        <div id="audio-file-name"></div>
+        <div id="output">
+            <output id="output"></output>
+        </div>
+
+    </div>
+
+    <div id="bottomright">
+        <img src="textures/MOONRISELogo500.jpg" alt="MoonriseLogo" style="width:120px;height:120px;">
+    </div>
+
+    <!-- Import maps polyfill - Remove this when import maps will be widely supported -->
+    <!-- downloaded from https://github.com/guybedford/es-module-shims version 1.5.4 -->
+
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "../build/three.module.js",
+                "three/addons/": "./jsm/"
+            }
+        }
+    </script>
+
+
+    <script type="module">
+
+        const startButton = document.getElementById('startButton');
+        startButton.addEventListener('click', removestartscreen);
+        function removestartscreen() {
+
+        // Fullscreen
+        let elem = document.documentElement;
+        elem.requestFullscreen();
+
+            const overlay = document.getElementById('overlay');
+            overlay.remove();
+
+            const audio2 = document.createElement("audio");
+            if (audio2.canPlayType("audio/ogg")) {
+                audio2.setAttribute("src", './audioISL/ocean-waves-on-beach-calm-gamemaster-audio-1-00-49.ogg');
+            }
+
+            if (audio2.canPlayType("audio/mpeg")) {
+                audio2.setAttribute("src", './audioISL/ocean-waves-on-beach-calm-gamemaster-audio-1-00-49.mp3');
+
+            }
+            audio2.volume = 0.10;
+            audio2.loop = true;
+            audio2.play();
+
+        }
+
+    </script>
+
+
+  <!-- <script type="module" src="MainMRECity90.js"></script> --> 
+    <script type="module" src="MainHome1.js"></script>
+
+
+</body>
+
+</html>

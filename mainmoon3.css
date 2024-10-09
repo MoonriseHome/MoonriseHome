@@ -1,0 +1,356 @@
+/* mainmoon3.css */
+
+:root {
+	--transparency-UI: 0.52;
+  }
+
+  .lil-gui { 
+	--background-color: #000000;
+	opacity: 0.5;
+	--padding: 2px;
+}
+
+body {
+		cursor: url('cursor3.png'), auto; 
+		/* for recording videos then the cursor is only a 
+		small dot */
+
+	margin: 0;
+	cursor: url('cursor1.png'), auto;
+	background-color: #000000;
+	color: #fff;
+	font-family: Monospace;
+	font-size: 14px;
+	line-height: 24px;
+	overscroll-behavior: none;
+	/* cursor: none; for recording videos */
+	/*cursor: pointer;   normal cursor */
+}
+
+input[type=text] {
+	cursor: url('cursor1.png'), auto;
+	padding:18px;
+	color: #e3e3e3;
+	font-size:16px;
+	background-color: #111;
+	border:0;
+	width: 70%;
+	height: 25px;
+	box-shadow:0 0 15px 4px rgba(19, 14, 14, 0.06);
+  }
+#output {
+
+	padding:18px;
+	color: #e3e3e3;
+	font-size:16px;
+	border:0;
+	width: 70%;
+	height: 25px;
+	box-shadow:0 0 15px 4px rgba(19, 14, 14, 0.06);
+}
+
+a {
+	color: #ff0;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#engine3d {
+
+
+	position: absolute;
+	left:  200px;
+	top: 10px;
+	width: 600px;
+	height: 400px;
+
+	background: rgb(0, 0, 0);
+}
+
+#scene3d {
+	padding: 10px; 
+	border-radius: 15px;
+	width: 600px;
+	height: 400px;
+	background: rgb(0, 0, 0);
+}
+
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+	background: #3a8de4;
+	border-radius: 12px;
+	border: transparent;
+	color: #110d0d;
+}
+
+.hide-cursor {
+    cursor: none !important;
+}
+
+#info {
+	position: absolute;
+	left:  70px;
+	top: 1px;
+	width: 10%;
+	background-color: black;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: left;
+	opacity: 0.1;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+#sidebarleft {
+	position: absolute;
+	left:  10px;
+	top: 300px;
+	width: 150px;
+	background-color: black;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: left;
+	opacity: 0.0;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+#topcenter {
+	position: absolute;
+	align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+	width: 30%;
+	text-align: center;
+	padding: 5px;
+	top: 2px;
+	opacity: 0.5;
+	z-index: 1; 
+}
+
+#topright {
+	position: absolute;
+	align-items: right;
+    right: 100px;
+    transform: translate(-50%, 0);
+	width: 17%;
+	text-align: center;
+	padding: 5px;
+	top: 2px;
+	opacity: 0.5;
+	z-index: 1; 
+}
+
+#sidebarlefttop {
+	position: absolute;
+	left:  0px;
+	top: 60px;
+	width: 120px;
+	padding: 5px;
+	/*background: rgba(0, 131, 15, 0.5);  background with 50% opacity */
+	background: transparent;
+	box-sizing: border-box;
+	text-align: center;
+	opacity: 0.6;
+	color: #111111;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+#sidebarleftlow {
+	position: absolute;
+	left:  10px;
+	bottom: 200px;
+	width: 80px;
+	background-color: black;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: left;
+	opacity: 0.1;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+
+#info2 {
+	position: absolute;
+	left:  10px;
+	top: 250px;
+	width: 180px;
+	border-radius: 5px;
+	background-color: darkgrey;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: left;
+	opacity: var(--transparency-UI);
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+#bottomleft {
+	position: absolute;
+	color:#777;
+	
+	left:  10px;
+	bottom: 10px;
+	width: 50%;
+	opacity: var(--transparency-UI);
+
+	pointer-events: none;
+	z-index: 1; 
+}
+
+#bottomright {
+	position: absolute;
+	right: 70px;
+	bottom: 10px;
+	width: 150px;
+	opacity: 0.7;
+
+	pointer-events: none;
+	z-index: 1; 
+}
+
+
+#bottomcenter {
+	position: absolute;
+	align-items: center;
+	height: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+	width: 60%;
+	background-color: black;
+	text-align: center;
+	padding: 5px;
+	bottom: 17px;
+	opacity: 0.0;
+	z-index: 5; 
+}
+
+#bottomiconscontainer {
+	position: absolute;
+	align-items: center;
+	height: 50px; 
+    left: 50%;
+    transform: translate(-50%, 0);
+	width: 35%;
+	background-color: #111122;
+	text-align: center;
+	padding: 10px;
+	bottom: 17px;
+	opacity: 0.6;
+	z-index: 14; 
+}
+
+
+#bottom1 {
+	position: absolute;
+	left:  10px;
+	bottom: 17px;
+	width: 50%;
+	opacity: 0.42;
+	height: 70px; 
+
+	pointer-events: none;
+	z-index: 1; 
+}
+
+
+#newinfo {
+	position: absolute;
+	top: 52px;
+	text-align: left;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+a, button, input, select {
+	pointer-events: auto;
+}
+
+.lil-gui {
+	z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+@media all and ( max-width: 640px ) {
+	.lil-gui.root { 
+		right: auto;
+		top: auto;
+		max-height: 50%;
+		max-width: 80%;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+#overlay {
+
+	position: absolute;
+	font-size: 16px;
+	z-index: 2;
+	top: 1px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+    text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgba(0,0,0,0.7);
+    z-index: 10; 
+}
+
+
+	#overlay button {
+		background: transparent;
+		border: 0;
+		border: 1px solid rgb(255, 255, 255);
+		border-radius: 4px;
+		color: #ffffff;
+		padding: 12px 18px;
+		text-transform: uppercase;
+		cursor: url('cursor1.png'), auto;
+        align-items: center;
+        justify-content: center;
+	}
+
+#notSupported {
+	width: 50%;
+	margin: auto;
+	background-color: #f00;
+	margin-top: 20px;
+	padding: 10px;
+}
