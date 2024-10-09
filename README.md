@@ -23,7 +23,10 @@ From simple pilots to production-ready solana web applications in no time. <br /
   </picture>
   </a>
 </div>
-
+<h2 align="center">
+If you have questions about the source code please contact us via X <br />
+3D Models are not included.
+</h2>
 <!---
 MoonriseHome/MoonriseHome is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
